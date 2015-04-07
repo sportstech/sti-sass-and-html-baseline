@@ -15,6 +15,20 @@ html, body
 body
   background-color: $site-background-color
 
+pre
+  white-space: pre-wrap
+  white-space: -moz-pre-wrap
+  white-space: -o-pre-wrap
+  word-wrap: break-word
+
+code
+  font-family: Courier, 'New Courier', monospace
+  font-size: 12px
+  display: block
+  background-color: $color-light-gray
+  border: darken($color-light-gray, 5%) 1px solid
+  +margin-trailer(2)
+
 @if $vendor-wrapper == true
   .vendor
     &--layout
