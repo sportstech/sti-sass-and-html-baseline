@@ -15,12 +15,28 @@
   <div class="sti">
     <div class="sti--layout__block">
       <h1>Style Guide</h1>
+      <h2>Components / Modules</h2>
+      <ul>
+        <li>Countdown Clock</li>
+        <li>Entry-Bar</li>
+        <li>Icons</li>
+        <li>Social Share Buttons</li>
+        <li>etc&hellip;</li>
+      </ul>
       <h2>UI Elements</h2>
       <ul>
         <li>Buttons</li>
         <li>Entry Bar Stuff</li>
         <li>Block Layout Containers</li>
-        <li>Flex Grid With Fall Back</li>
+        <li>Layouts
+          <ul>
+            <li>Block Level</li>
+            <li>Flexbox</li>
+            <li>Floats</li>
+            <li>Inline Block</li>
+          </ul>
+        </li>
+        <li>Modals</li>
         <li>Tabs</li>
         <li>Tabular Data</li>
         <li>Typography</li>
@@ -29,6 +45,7 @@
 
     <div class="sti--layout__block">
       <h1>Navigation</h1>
+      <nav>
         <ul class="sti--nav__primary">
           <li class="nav--item__tabbed"><a href="#" class="nav--item__link">Home</a></li>
           <li class="nav--item__tabbed"><a href="#" class="nav--item__link">Leagues</a></li>
@@ -40,43 +57,36 @@
         </ul>
       </nav>
     </div>
-    <div class="sti--layout__block">
-      <div class="container__username">Username</div>
-      <div class="container__action">
-        <button>Login</button>
-      </div>
-      <div class="container__stats">
-        <div class="entry-bar--stat">
-          <div class="entry-bar--stat__label">Label</div>
-          <div class="entry-bar--stat__result">--</div>
-        </div>
-        <div class="entry-bar--stat">
-          <div class="entry-bar--stat__label">Label</div>
-          <div class="entry-bar--stat__result">--</div>
-        </div>
-        <div class="entry-bar--stat">
-          <div class="entry-bar--stat__label">Label</div>
-          <div class="entry-bar--stat__result">--</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="sti--columns">
-      <div class="columns--two__wide">
-        <div class="column__primary"></div>
-        <div class="column__secondear"></div>
-      </div>
-    </div> -->
-
 
     <div class="sti--layout__block">
-      <p>Powered by <a href="http://www.sportstechinc.com">STI</a>.</p>
+      <div class="entry-bar">
+        <h1>Entry Bar HTML</h1>
+        <div class="container__username">Username</div>
+        <div class="container__action">
+          <button>Login</button>
+        </div>
+        <div class="container__stats">
+          <div class="entry-bar--stat">
+            <div class="entry-bar--stat__label">Label</div>
+            <div class="entry-bar--stat__result">--</div>
+          </div>
+          <div class="entry-bar--stat">
+            <div class="entry-bar--stat__label">Label</div>
+            <div class="entry-bar--stat__result">--</div>
+          </div>
+          <div class="entry-bar--stat">
+            <div class="entry-bar--stat__label">Label</div>
+            <div class="entry-bar--stat__result">--</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <footer class="vendor--layout">
     <div class="vendor--layout__footer">
       <p>© Copyright and all the stuff. This is the vendor footer</p>
+      <p>Powered by <a href="http://www.sportstechinc.com">STI</a>.</p>
     </div>
   </footer>
 </body>

@@ -14,20 +14,21 @@ html, body
   padding: 0
 body
   background-color: $site-background-color
-
-pre
-  white-space: pre-wrap
-  white-space: -moz-pre-wrap
-  white-space: -o-pre-wrap
-  word-wrap: break-word
-
-code
-  font-family: Courier, 'New Courier', monospace
-  font-size: 12px
-  display: block
+ul
+  @extend %flex-layout
+  margin: -1px
+  ul
+    display: block
+    margin: 0
+li 
+  +flex(1)
+  text-align: center
   background-color: $color-light-gray
-  border: darken($color-light-gray, 5%) 1px solid
-  +margin-trailer(2)
+  margin: 1px
+  li 
+    display: block
+    margin: 0
+    background-color: transparent 
 
 @if $vendor-wrapper == true
   .vendor
@@ -44,6 +45,7 @@ code
         background-color: $vendor-footer-color
       
 .sti
+  width: 100%
   background-color: $sti-container-color
   a
     +link-colors($link-primary, $link-hover, $link-active, $link-visited, $link-focus)
