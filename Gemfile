@@ -1,0 +1,1 @@
+gem 'stikaizen', git: 'git@sportstech.unfuddle.com:sportstech/stikaizen.git'

@@ -1,0 +1,33 @@
+%font-default
+  font-family: arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+%bold-font
+  font-weight: bold
+  @extend %font-default
+%regular-font
+  @extend %font-default
+
+%large-headline
+  @extend %bold-font
+  +adjust-font-size-to(36px)
+
+%medium-headline
+  @extend %bold-font
+  +adjust-font-size-to(24px)
+
+%small-headline
+  @extend %bold-font
+  +adjust-font-size-to(18px)
+
+%regular-text
+  @extend %regular-font
+  +adjust-font-size-to(14px)
+
+%medium-text
+  @extend %regular-font
+  +adjust-font-size-to(18px)
+
+%large-text
+  @extend %regular-font
+  +adjust-font-size-to(20px)

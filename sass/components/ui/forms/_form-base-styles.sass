@@ -1,0 +1,23 @@
+input[type="text"], 
+input[type="search"], 
+input[type="date"],
+input[type="password"], 
+input[type="email"],
+input[type="number"],
+textarea 
+  +appearance(none)
+input[type="text"], 
+input[type="search"], 
+input[type="date"],
+input[type="password"], 
+input[type="email"],
+input[type="number"]
+  border: $form-border
+  color: $form-text
+  height: $form-input-height
+  line-height: $form-input-height
+  padding: 0 $padding-half
+  +border-radius($form-border-radius)
+  +input-placeholder
+    color: $form-placeholder-text
+    font-style: italic
