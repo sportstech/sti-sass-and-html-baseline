@@ -1,7 +1,6 @@
 // Baseline styles for all platforms. 
 // This file is called from the platforms directory for each screen type,
 // to allow for variable overrides.
-
 +establish-baseline
 
 *,
@@ -14,21 +13,7 @@ html, body
   padding: 0
 body
   background-color: $site-background-color
-ul
-  @extend %flex-layout
-  margin: -1px
-  ul
-    display: block
-    margin: 0
-li 
-  +flex(1)
-  text-align: center
-  background-color: $color-light-gray
-  margin: 1px
-  li 
-    display: block
-    margin: 0
-    background-color: transparent 
+
 
 @if $vendor-wrapper == true
   .vendor
@@ -47,12 +32,4 @@ li
 .sti
   width: 100%
   background-color: $sti-container-color
-  a
-    +link-colors($link-primary, $link-hover, $link-active, $link-visited, $link-focus)
   @extend %regular-text
-  &--layout 
-    &__block
-      width: $site-width
-      margin: 0 auto
-      @if $site-padding > 0
-        padding: $site-padding

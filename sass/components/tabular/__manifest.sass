@@ -1,0 +1,20 @@
+.tabular
+  &--headline
+  &--row
+    border-bottom: $color-gray 1px solid
+    +clearfix
+    &.is-featured-entry
+      background-color: $is-featured-entry
+      color: $is-featured-entry-text
+    &.is-my-entry
+      background-color: $is-my-entry
+      color: $is-my-entry-text
+  &--column
+    +float(left)
+  &--header
+    >div
+      font-weight: bold
+      line-height: $table-header-height
+  &--body
+    >div
+      line-height: $table-row-height

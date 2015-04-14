@@ -1,0 +1,27 @@
+.sti-nav
+  &--tabbed
+    +clearfix
+    &__item
+      +span($nav-tab-width)
+      margin-right: 0
+      text-align: center
+    &__link
+      display: block
+      color: $nav-text-color
+      background-color: $nav-tab-primary
+      text-decoration: none
+      +sti-hover
+        background-color: $nav-tab-primary-hover
+      +sti-active
+        background-color: darken($nav-tab-primary-hover, 2%)
+      font-size: $nav-tab-font-size
+      line-height: $nav-tab-height
+      .active &
+        background-color: $nav-tab-primary-current
+        color: $nav-tab-primary-current-text
+  &--inline
+    &__item
+      +inline-block
+    &__link
+      font-size: $nav-tab-font-size
+      line-height: $nav-tab-height

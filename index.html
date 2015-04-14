@@ -9,75 +9,43 @@
   <div class="vendor--layout">
     <div class="vendor--layout__header">
       <div class="logo">Sports Technologies, LLC</div>
-      <div class="game-title">Style Guide</div>
+      <div class="game-title">Style and Layout Guide</div>
     </div>
   </div>
   <div class="sti">
-    <div class="sti--layout__block">
-      <h1>Style Guide</h1>
-      <h2>Components / Modules</h2>
-      <ul>
-        <li>Countdown Clock</li>
-        <li>Entry-Bar</li>
-        <li>Icons</li>
-        <li>Social Share Buttons</li>
-        <li>etc&hellip;</li>
+    <nav class="sti-nav">
+      <ul class="sti-nav--tabbed">
+        <li class="sti-nav--tabbed__item active"><a href="/" class="sti-nav--tabbed__link">Entry Bar Layout</a></li>
+        <li class="sti-nav--tabbed__item"><a href="tabular.html" class="sti-nav--tabbed__link">Tabular Layout</a></li>
       </ul>
-      <h2>UI Elements</h2>
-      <ul>
-        <li>Buttons</li>
-        <li>Entry Bar Stuff</li>
-        <li>Block Layout Containers</li>
-        <li>Layouts
-          <ul>
-            <li>Block Level</li>
-            <li>Flexbox</li>
-            <li>Floats</li>
-            <li>Inline Block</li>
-          </ul>
-        </li>
-        <li>Modals</li>
-        <li>Tabs</li>
-        <li>Tabular Data</li>
-        <li>Typography</li>
+      <ul class="sti-nav--inline">
+        <li class="sti-nav--inline__item"><a href="page.html" class="sti-nav--inline__link">Static Content Layout</a></li>
       </ul>
+    </nav>
+    
+    <div class="sti--header">
+      <h1>Entry Bar Layout</h1>
     </div>
 
-    <div class="sti--layout__block">
-      <h1>Navigation</h1>
-      <nav>
-        <ul class="sti--nav__primary">
-          <li class="nav--item__tabbed"><a href="#" class="nav--item__link">Home</a></li>
-          <li class="nav--item__tabbed"><a href="#" class="nav--item__link">Leagues</a></li>
-          <li class="nav--item__tabbed"><a href="#" class="nav--item__link">Leaderboard</a></li>
-        </ul>
-        <ul class="sti--nav__secondary">
-          <li class="nav--item"><a href="#" class="nav--item__link">How To Play</a></li>
-          <li class="nav--item"><a href="#" class="nav--item__link">Rules</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="sti--layout__block">
-      <div class="entry-bar">
-        <h1>Entry Bar HTML</h1>
-        <div class="container__username">Username</div>
-        <div class="container__action">
+    <div class="sti-entry-bar">
+      <div class="sti-entry-bar--entry">
+        <div class="sti-entry-bar--entry__name">Username</div>
+        <div class="sti-entry-bar--entry__action">
           <button>Login</button>
         </div>
-        <div class="container__stats">
-          <div class="entry-bar--stat">
-            <div class="entry-bar--stat__label">Label</div>
-            <div class="entry-bar--stat__result">--</div>
-          </div>
-          <div class="entry-bar--stat">
-            <div class="entry-bar--stat__label">Label</div>
-            <div class="entry-bar--stat__result">--</div>
-          </div>
-          <div class="entry-bar--stat">
-            <div class="entry-bar--stat__label">Label</div>
-            <div class="entry-bar--stat__result">--</div>
-          </div>
+      </div>
+      <div class="sti-entry-bar--stats">
+        <div class="sti-entry-bar--stats__group">
+          <div class="label">Label</div>
+          <div class="result">--</div>
+        </div>
+        <div class="sti-entry-bar--stats__group">
+          <div class="label">Label</div>
+          <div class="result">--</div>
+        </div>
+        <div class="sti-entry-bar--stats__group">
+          <div class="label">Label</div>
+          <div class="result">--</div>
         </div>
       </div>
     </div>
