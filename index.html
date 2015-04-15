@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="UTF-8">
-  <title>Baseline</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="stylesheets/desktop.css">
+  <script src="scripts/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
   <div class="vendor--layout">
@@ -14,48 +21,34 @@
   </div>
   <div class="sti">
     <nav class="sti-nav">
-      <ul class="sti-nav--tabbed">
-        <li class="sti-nav--tabbed__item active"><a href="/" class="sti-nav--tabbed__link">Entry Bar Layout</a></li>
-        <li class="sti-nav--tabbed__item"><a href="tabular.html" class="sti-nav--tabbed__link">Tabular Layout</a></li>
-      </ul>
       <ul class="sti-nav--inline">
-        <li class="sti-nav--inline__item"><a href="page.html" class="sti-nav--inline__link">Static Content Layout</a></li>
+        <li class="sti-nav--inline__item" ui-sref-active="active" >
+          <a ui-sref="landing" class="sti-nav--inline__link">Home</a></li>
+        <li class="sti-nav--inline__item" ui-sref-active="active" >
+          <a ui-sref="static-content" class="sti-nav--inline__link">Static Content Layout</a></li>
       </ul>
+      <ul class="sti-nav--tabbed">
+        <li class="sti-nav--tabbed__item" ui-sref-active="active" >
+          <a ui-sref="entry-bar" class="sti-nav--tabbed__link">Entry Bar</a></li>
+        <li class="sti-nav--tabbed__item" ui-sref-active="active" >
+          <a ui-sref="tabular-data" class="sti-nav--tabbed__link">Tabular Data</a></li>
+      </ul>
+      
     </nav>
-    
-    <div class="sti--header">
-      <h1>Entry Bar Layout</h1>
-    </div>
-
-    <div class="sti-entry-bar">
-      <div class="sti-entry-bar--entry">
-        <div class="sti-entry-bar--entry__name">Username</div>
-        <div class="sti-entry-bar--entry__action">
-          <button>Login</button>
-        </div>
-      </div>
-      <div class="sti-entry-bar--stats">
-        <div class="sti-entry-bar--stats__group">
-          <div class="label">Label</div>
-          <div class="result">--</div>
-        </div>
-        <div class="sti-entry-bar--stats__group">
-          <div class="label">Label</div>
-          <div class="result">--</div>
-        </div>
-        <div class="sti-entry-bar--stats__group">
-          <div class="label">Label</div>
-          <div class="result">--</div>
-        </div>
-      </div>
-    </div>
+    <div ui-view></div>
   </div>
-
   <footer class="vendor--layout">
     <div class="vendor--layout__footer">
       <p>© Copyright and all the stuff. This is the vendor footer</p>
       <p>Powered by <a href="http://www.sportstechinc.com">STI</a>.</p>
     </div>
   </footer>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.js"></script>
+  <script src="https://code.angularjs.org/1.3.15/angular-animate.min.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 </html>

@@ -31,3 +31,7 @@
 %large-text
   @extend %regular-font
   +adjust-font-size-to(20px)
+
+%default-text-links
+  a 
+    +link-colors($link-primary, $link-hover, $link-active, $link-visited, $link-focus)

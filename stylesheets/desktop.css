@@ -113,16 +113,18 @@ body {
 .sti {
   width: 100%;
   background-color: #fff;
+  padding: 60px 0;
+  padding: 3.75rem 0;
 }
 
 /* line 1, ../sass/platforms/desktop/_layout.sass */
-.entry-bar, .sti-nav, .sti--header, .sti--static-content, .tabular {
+.sti-entry-bar, .sti-nav, .sti--header, .sti--static-content, .sti-tabular {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-.entry-bar:after, .sti-nav:after, .sti--header:after, .sti--static-content:after, .tabular:after {
+.sti-entry-bar:after, .sti-nav:after, .sti--header:after, .sti--static-content:after, .sti-tabular:after {
   content: " ";
   display: block;
   clear: both;
@@ -146,6 +148,27 @@ h1, h2, h3 {
 .vendor--layout__header, .vendor--layout__footer, .sti, button, .button {
   font-size: 0.875em;
   line-height: 1.71429em;
+}
+
+/* line 36, ../sass/globals/helpers/_typography.sass */
+.sti-nav--inline__item a, .sti-tabular--body > div a {
+  color: blue;
+}
+/* line 18, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/typography/links/_link-colors.scss */
+.sti-nav--inline__item a:visited, .sti-tabular--body > div a:visited {
+  color: blue;
+}
+/* line 21, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/typography/links/_link-colors.scss */
+.sti-nav--inline__item a:focus, .sti-tabular--body > div a:focus {
+  color: yellow;
+}
+/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/typography/links/_link-colors.scss */
+.sti-nav--inline__item a:hover, .sti-tabular--body > div a:hover {
+  color: #000099;
+}
+/* line 27, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/typography/links/_link-colors.scss */
+.sti-nav--inline__item a:active, .sti-tabular--body > div a:active {
+  color: yellow;
 }
 
 /* line 1, ../sass/components/ui/buttons/_button-base-styles.sass */
@@ -260,7 +283,7 @@ input[type="number"]::-webkit-input-placeholder {
   background-color: #e6e6e6;
   text-decoration: none;
   font-size: 16px;
-  line-height: 60px;
+  line-height: 30px;
 }
 /* line 38, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/bundler/gems/stikaizen-641a4c106ebb/stylesheets/stikaizen/helpers/__platforms.sass */
 .sti-nav--tabbed__link:hover {
@@ -283,38 +306,38 @@ input[type="number"]::-webkit-input-placeholder {
   *zoom: 1;
   *display: inline;
 }
-/* line 25, ../sass/components/nav/__manifest.sass */
+/* line 26, ../sass/components/nav/__manifest.sass */
 .sti-nav--inline__link {
   font-size: 16px;
-  line-height: 60px;
+  line-height: 30px;
 }
 
 /* line 3, ../sass/components/tabular/__manifest.sass */
-.tabular--row {
+.sti-tabular--row {
   border-bottom: #ccc 1px solid;
   overflow: hidden;
   *zoom: 1;
 }
 /* line 6, ../sass/components/tabular/__manifest.sass */
-.tabular--row.is-featured-entry {
-  background-color: red;
-  color: #fff;
+.sti-tabular--row.is-featured-entry {
+  background-color: #e6e6e6;
+  color: #000;
 }
 /* line 9, ../sass/components/tabular/__manifest.sass */
-.tabular--row.is-my-entry {
-  background-color: blue;
-  color: #fff;
+.sti-tabular--row.is-my-entry {
+  background-color: #bfbfbf;
+  color: #000;
 }
 /* line 12, ../sass/components/tabular/__manifest.sass */
-.tabular--column {
+.sti-tabular--column {
   float: left;
 }
 /* line 15, ../sass/components/tabular/__manifest.sass */
-.tabular--header > div {
+.sti-tabular--header > div {
   font-weight: bold;
   line-height: 24px;
 }
 /* line 19, ../sass/components/tabular/__manifest.sass */
-.tabular--body > div {
+.sti-tabular--body > div {
   line-height: 60px;
 }
