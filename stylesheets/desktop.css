@@ -90,47 +90,28 @@ body {
   background-color: #e6e6e6;
 }
 
-/* line 20, ../sass/globals/_baseline.sass */
-.vendor--layout {
-  width: 100%;
-}
-/* line 22, ../sass/globals/_baseline.sass */
-.vendor--layout__header, .vendor--layout__footer {
-  margin: 0 auto;
-  width: 1000px;
-}
-/* line 26, ../sass/globals/_baseline.sass */
-.vendor--layout__header {
-  height: 70px;
-  background-color: #e6e6e6;
-}
-/* line 29, ../sass/globals/_baseline.sass */
-.vendor--layout__footer {
-  background-color: #e6e6e6;
-}
-
-/* line 32, ../sass/globals/_baseline.sass */
-.sti {
+/* line 17, ../sass/globals/_baseline.sass */
+.sti--wrap {
   width: 100%;
   background-color: #fff;
   padding: 60px 0;
   padding: 3.75rem 0;
 }
 
-/* line 1, ../sass/platforms/desktop/_layout.sass */
-.sti-entry-bar, .sti-nav, .sti--header, .sti--static-content, .sti-tabular {
+/* line 22, ../sass/globals/_baseline.sass */
+.sti--view {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-.sti-entry-bar:after, .sti-nav:after, .sti--header:after, .sti--static-content:after, .sti-tabular:after {
+.sti--view:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 4, ../sass/platforms/desktop/_layout.sass */
+/* line 1, ../sass/platforms/desktop/_layout.sass */
 h1, h2, h3 {
   font-size: 1.875em;
   line-height: 1.6em;
@@ -138,19 +119,19 @@ h1, h2, h3 {
 }
 
 /* line 1, ../sass/globals/helpers/_typography.sass */
-.vendor--layout__header, .vendor--layout__footer, .sti, button, .button {
+.sti--wrap, button, .button, .vendor--layout__header, .vendor--layout__footer {
   font-family: arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 23, ../sass/globals/helpers/_typography.sass */
-.vendor--layout__header, .vendor--layout__footer, .sti, button, .button {
+/* line 24, ../sass/globals/helpers/_typography.sass */
+.sti--wrap, button, .button, .vendor--layout__header, .vendor--layout__footer {
   font-size: 0.875em;
   line-height: 1.71429em;
 }
 
-/* line 36, ../sass/globals/helpers/_typography.sass */
+/* line 37, ../sass/globals/helpers/_typography.sass */
 .sti-nav--inline__item a, .sti-tabular--body > div a {
   color: blue;
 }
@@ -261,6 +242,25 @@ input[type="email"]::-webkit-input-placeholder,
 input[type="number"]::-webkit-input-placeholder {
   color: #e6e6e6;
   font-style: italic;
+}
+
+/* line 3, ../sass/components/layout/_vendor-wrapper.sass */
+.vendor--layout {
+  width: 100%;
+}
+/* line 5, ../sass/components/layout/_vendor-wrapper.sass */
+.vendor--layout__header, .vendor--layout__footer {
+  margin: 0 auto;
+  width: 1000px;
+}
+/* line 9, ../sass/components/layout/_vendor-wrapper.sass */
+.vendor--layout__header {
+  height: 70px;
+  background-color: #e6e6e6;
+}
+/* line 12, ../sass/components/layout/_vendor-wrapper.sass */
+.vendor--layout__footer {
+  background-color: #e6e6e6;
 }
 
 /* line 2, ../sass/components/nav/__manifest.sass */

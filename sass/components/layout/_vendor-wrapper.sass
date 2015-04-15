@@ -1,0 +1,13 @@
+@if $vendor-wrapper == true
+  .vendor
+    &--layout
+      width: 100%
+      &__header, &__footer
+        @extend %regular-text
+        margin: 0 auto
+        width: $site-width
+      &__header
+        height: $vendor-header-height
+        background-color: $vendor-header-color
+      &__footer
+        background-color: $vendor-footer-color  

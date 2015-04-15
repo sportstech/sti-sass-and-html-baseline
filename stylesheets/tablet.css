@@ -90,42 +90,36 @@ body {
   background-color: #e6e6e6;
 }
 
-/* line 20, ../sass/globals/_baseline.sass */
-.vendor--layout {
-  width: 100%;
-}
-/* line 22, ../sass/globals/_baseline.sass */
-.vendor--layout__header, .vendor--layout__footer {
-  margin: 0 auto;
-  width: 1000px;
-}
-/* line 26, ../sass/globals/_baseline.sass */
-.vendor--layout__header {
-  height: 70px;
-  background-color: #e6e6e6;
-}
-/* line 29, ../sass/globals/_baseline.sass */
-.vendor--layout__footer {
-  background-color: #e6e6e6;
-}
-
-/* line 32, ../sass/globals/_baseline.sass */
-.sti {
+/* line 17, ../sass/globals/_baseline.sass */
+.sti--wrap {
   width: 100%;
   background-color: #fff;
   padding: 10px 0;
   padding: 0.625rem 0;
 }
 
+/* line 22, ../sass/globals/_baseline.sass */
+.sti--view {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.sti--view:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 /* line 1, ../sass/globals/helpers/_typography.sass */
-.vendor--layout__header, .vendor--layout__footer, .sti {
+.sti--wrap {
   font-family: arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 23, ../sass/globals/helpers/_typography.sass */
-.vendor--layout__header, .vendor--layout__footer, .sti {
+/* line 24, ../sass/globals/helpers/_typography.sass */
+.sti--wrap {
   font-size: 0.875em;
   line-height: 1.71429em;
 }
