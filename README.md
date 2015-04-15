@@ -2,6 +2,7 @@ STI Playground for Sass and HTML
 ================================
 
 More stuff coming. Testing out ideas for style guides.
+[This repo can be viewed online](http://sportstech.github.io/sti-sass-and-html-playground).
 
 Goal is to determine best practices for developing common front-end items like:
 
