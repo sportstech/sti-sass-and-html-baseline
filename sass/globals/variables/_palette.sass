@@ -12,6 +12,12 @@ $color-green: green
 $color-blue: blue 
 $color-purple: purple
 
+
+// UI Colors
+$border-color: $color-gray
+$shadow-color-light: rgba($color-black, .2)
+$shadow-color-dark: rgba($color-black, .5)
+
 // Alert
 $alert-warning: $color-red
 $alert-success: $color-blue
@@ -26,7 +32,7 @@ $button-secondary-hover: darken($button-secondary, 5%)
 $button-disabled: $color-gray
 
 // Forms
-$form-border: $color-light-gray 1px solid
+$form-border: $border-color 1px solid
 $form-text: $color-medium-gray
 $form-placeholder-text: $color-light-gray
 
@@ -47,7 +53,7 @@ $sti-container-color: $color-white
 $link-primary: $color-blue
 $link-visited: $link-primary
 $link-hover: darken($link-primary, 20%)
-$link-active: complement($link-primary)
+$link-active: $color-red
 $link-focus: $link-active
 
 // Navigation Tabs
