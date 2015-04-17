@@ -112,41 +112,59 @@ body {
 }
 
 /* line 1, ../sass/globals/helpers/_typography.sass */
-.sti--view__static-content h1, .sti--view__static-content h2, .sti--view__static-content h3, .sti--view__static-content h4, .sti--view__static-content h5, .sti--view__static-content h6, .sti--view__static-content th, .sti--wrap, button, .button, .vendor--layout__header, .vendor--layout__footer {
+.sti--view__static-content h1, .sti--view__static-content h2, .sti--view__static-content h3, .sti--view__static-content h4, .sti--view__static-content h5, .sti--view__static-content h6, .sti--wrap, button, .button, .vendor--layout__header, .vendor--layout__footer, .sti--view__static-content p, .sti--view__static-content li, .sti--view__static-content td {
   font-family: arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* line 5, ../sass/globals/helpers/_typography.sass */
-.sti--view__static-content h1, .sti--view__static-content h2, .sti--view__static-content h3, .sti--view__static-content h4, .sti--view__static-content h5, .sti--view__static-content h6, .sti--view__static-content th {
+.sti--view__static-content h1, .sti--view__static-content h2, .sti--view__static-content h3, .sti--view__static-content h4, .sti--view__static-content h5, .sti--view__static-content h6 {
   font-weight: bold;
 }
 
+/* line 12, ../sass/globals/helpers/_typography.sass */
+.sti--view__static-content h1 {
+  font-size: 2.25em;
+  line-height: 3;
+}
+
+/* line 16, ../sass/globals/helpers/_typography.sass */
+.sti--view__static-content h2 {
+  font-size: 1.5em;
+  line-height: 2.5;
+}
+
+/* line 20, ../sass/globals/helpers/_typography.sass */
+.sti--view__static-content h3, .sti--view__static-content h4, .sti--view__static-content h5, .sti--view__static-content h6 {
+  font-size: 1.125em;
+  line-height: 2;
+}
+
 /* line 24, ../sass/globals/helpers/_typography.sass */
-.sti--wrap, button, .button, .vendor--layout__header, .vendor--layout__footer {
-  font-size: 0.875em;
-  line-height: 1.71429em;
+.sti--wrap, button, .button, .vendor--layout__header, .vendor--layout__footer, .sti--view__static-content p, .sti--view__static-content li, .sti--view__static-content td {
+  font-size: 1em;
+  line-height: 1.7;
 }
 
 /* line 37, ../sass/globals/helpers/_typography.sass */
-.sti-nav--inline__item a, .sti-tabular--body > div a {
+.sti-nav--inline__item a, .sti-tabular--body > div a, .sti--view__static-content p a, .sti--view__static-content li a, .sti--view__static-content td a {
   color: blue;
 }
 /* line 18, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/typography/links/_link-colors.scss */
-.sti-nav--inline__item a:visited, .sti-tabular--body > div a:visited {
+.sti-nav--inline__item a:visited, .sti-tabular--body > div a:visited, .sti--view__static-content p a:visited, .sti--view__static-content li a:visited, .sti--view__static-content td a:visited {
   color: blue;
 }
 /* line 21, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/typography/links/_link-colors.scss */
-.sti-nav--inline__item a:focus, .sti-tabular--body > div a:focus {
+.sti-nav--inline__item a:focus, .sti-tabular--body > div a:focus, .sti--view__static-content p a:focus, .sti--view__static-content li a:focus, .sti--view__static-content td a:focus {
   color: red;
 }
 /* line 24, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/typography/links/_link-colors.scss */
-.sti-nav--inline__item a:hover, .sti-tabular--body > div a:hover {
+.sti-nav--inline__item a:hover, .sti-tabular--body > div a:hover, .sti--view__static-content p a:hover, .sti--view__static-content li a:hover, .sti--view__static-content td a:hover {
   color: #000099;
 }
 /* line 27, ../../../../.rvm/gems/ruby-2.0.0-p576@baseline/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/typography/links/_link-colors.scss */
-.sti-nav--inline__item a:active, .sti-tabular--body > div a:active {
+.sti-nav--inline__item a:active, .sti-tabular--body > div a:active, .sti--view__static-content p a:active, .sti--view__static-content li a:active, .sti--view__static-content td a:active {
   color: red;
 }
 
@@ -340,52 +358,32 @@ input[type="number"]::-webkit-input-placeholder {
   line-height: 60px;
 }
 
-/* line 4, ../sass/views/_static-content.sass */
-.sti--view__static-content h1 {
-  font-size: 2.25em;
-  line-height: 2.5em;
-}
-/* line 6, ../sass/views/_static-content.sass */
-.sti--view__static-content h2 {
-  font-size: 1.5em;
-  line-height: 2.75em;
-}
-/* line 8, ../sass/views/_static-content.sass */
-.sti--view__static-content h3, .sti--view__static-content h4, .sti--view__static-content h5, .sti--view__static-content h6 {
-  font-size: 1.3125em;
-  line-height: 3em;
-}
-/* line 10, ../sass/views/_static-content.sass */
-.sti--view__static-content p, .sti--view__static-content li, .sti--view__static-content td {
-  font-size: 1em;
-  line-height: 1.6em;
-}
-/* line 12, ../sass/views/_static-content.sass */
+/* line 11, ../sass/views/_static-content.sass */
 .sti--view__static-content p, .sti--view__static-content ul, .sti--view__static-content ol, .sti--view__static-content table {
   margin-bottom: 1.5em;
 }
-/* line 14, ../sass/views/_static-content.sass */
+/* line 13, ../sass/views/_static-content.sass */
 .sti--view__static-content p strong, .sti--view__static-content p b, .sti--view__static-content ul strong, .sti--view__static-content ul b, .sti--view__static-content ol strong, .sti--view__static-content ol b, .sti--view__static-content table strong, .sti--view__static-content table b {
   font-weight: bold;
 }
-/* line 16, ../sass/views/_static-content.sass */
+/* line 15, ../sass/views/_static-content.sass */
 .sti--view__static-content p em, .sti--view__static-content p i, .sti--view__static-content ul em, .sti--view__static-content ul i, .sti--view__static-content ol em, .sti--view__static-content ol i, .sti--view__static-content table em, .sti--view__static-content table i {
   font-style: italic;
 }
-/* line 19, ../sass/views/_static-content.sass */
+/* line 18, ../sass/views/_static-content.sass */
 .sti--view__static-content ul li {
   list-style: square;
 }
-/* line 22, ../sass/views/_static-content.sass */
+/* line 21, ../sass/views/_static-content.sass */
 .sti--view__static-content ol li {
   list-style: decimal;
 }
-/* line 24, ../sass/views/_static-content.sass */
+/* line 23, ../sass/views/_static-content.sass */
 .sti--view__static-content table {
   width: 100%;
   border-collapse: collapse;
 }
-/* line 27, ../sass/views/_static-content.sass */
+/* line 26, ../sass/views/_static-content.sass */
 .sti--view__static-content table td, .sti--view__static-content table th {
   border-bottom: #ccc 1px solid;
   padding: 10px;

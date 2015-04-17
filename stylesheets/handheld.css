@@ -120,6 +120,6 @@ body {
 
 /* line 24, ../sass/globals/helpers/_typography.sass */
 .sti--wrap {
-  font-size: 0.875em;
-  line-height: 1.71429em;
+  font-size: 1em;
+  line-height: 1.7;
 }

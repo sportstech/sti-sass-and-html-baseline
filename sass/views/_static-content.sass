@@ -1,14 +1,13 @@
 .sti--view__static-content
-  #{headings(all)}, th
-    @extend %bold-font
   h1
-    +adjust-font-size-to(36px, lines(36px * 2.5))
+    @extend %large-headline
   h2
-    +adjust-font-size-to(24px, lines(24px * 2.75))
-  h3, h4, h5, h6
-    +adjust-font-size-to(21px, lines(21px * 3))
+    @extend %medium-headline
+  #{headings(3,6)}
+    @extend %small-headline
   p, li, td
-    +adjust-font-size-to(16px, lines(16px * 1.6))
+    @extend %regular-text
+    @extend %default-text-links
   p, ul, ol, table
     +margin-trailer(1)
     strong, b
